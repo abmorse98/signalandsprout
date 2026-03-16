@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 <title>Signal & Sprout</title>
 
 <style>
@@ -8,13 +9,13 @@
 body{
 font-family:-apple-system,BlinkMacSystemFont,sans-serif;
 margin:0;
-background:#f6f6f6;
+background:#f5f5f7;
 color:#111;
 text-align:center;
 }
 
 header{
-padding:80px 20px 40px;
+padding:90px 20px 40px;
 }
 
 h1{
@@ -39,22 +40,38 @@ padding:40px;
 background:white;
 border-radius:18px;
 padding:40px;
-width:240px;
-box-shadow:0 15px 30px rgba(0,0,0,0.08);
+width:260px;
+box-shadow:0 20px 35px rgba(0,0,0,0.08);
 transition:transform .2s;
+text-decoration:none;
+color:black;
 }
 
 .card:hover{
-transform:translateY(-6px);
+transform:translateY(-8px);
 }
 
 .card img{
-width:80px;
+width:90px;
 margin-bottom:15px;
 }
 
 .card h2{
 margin:10px 0;
+}
+
+.appstore{
+margin-top:50px;
+}
+
+.appstore a{
+display:inline-block;
+background:black;
+color:white;
+padding:16px 28px;
+border-radius:10px;
+font-size:16px;
+text-decoration:none;
 }
 
 footer{
@@ -71,6 +88,7 @@ color:#555;
 }
 
 </style>
+
 </head>
 
 <body>
@@ -80,32 +98,42 @@ color:#555;
 <h1>Signal & Sprout</h1>
 
 <p class="tagline">
-Simple tools for growing families.
+Simple tools for growing families
 </p>
 
 </header>
 
 <section class="apps">
 
-<div class="card">
+<a href="/moneysprout" class="card">
 
 <img src="moneysprout-icon.png">
 
 <h2>MoneySprout</h2>
 
-<p>Budgeting made simple.</p>
+<p>Budgeting made simple</p>
 
-</div>
+</a>
 
 <div class="card">
 
 <h2>Grow</h2>
 
-<p>Baby growth tracking.</p>
+<p>Baby growth tracking</p>
 
 </div>
 
 </section>
+
+<div class="appstore">
+
+<a href="https://apps.apple.com/us/app/moneysprout-grow-your-budget/id6760194060" target="_blank">
+
+Download MoneySprout on the App Store
+
+</a>
+
+</div>
 
 <footer>
 
@@ -124,4 +152,5 @@ Simple tools for growing families.
 </footer>
 
 </body>
+
 </html>
