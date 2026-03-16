@@ -14,18 +14,26 @@ color:#111;
 text-align:center;
 }
 
-header{
-padding:90px 20px 40px;
+.container{
+max-width:1100px;
+margin:auto;
+padding:80px 20px;
+}
+
+.logo{
+width:140px;
+margin-bottom:20px;
 }
 
 h1{
 font-size:48px;
-margin-bottom:10px;
+margin:10px 0;
 }
 
 .tagline{
 color:#666;
 font-size:18px;
+margin-bottom:50px;
 }
 
 .apps{
@@ -33,16 +41,15 @@ display:flex;
 justify-content:center;
 gap:50px;
 flex-wrap:wrap;
-padding:40px;
 }
 
 .card{
 background:white;
-border-radius:18px;
+border-radius:20px;
 padding:40px;
 width:260px;
-box-shadow:0 20px 35px rgba(0,0,0,0.08);
-transition:transform .2s;
+box-shadow:0 25px 40px rgba(0,0,0,0.08);
+transition:transform .2s ease;
 text-decoration:none;
 color:black;
 }
@@ -53,15 +60,20 @@ transform:translateY(-8px);
 
 .card img{
 width:90px;
-margin-bottom:15px;
+margin-bottom:20px;
 }
 
 .card h2{
 margin:10px 0;
+font-size:22px;
+}
+
+.card p{
+color:#666;
 }
 
 .appstore{
-margin-top:50px;
+margin-top:60px;
 }
 
 .appstore a{
@@ -75,7 +87,7 @@ text-decoration:none;
 }
 
 footer{
-margin-top:80px;
+margin-top:100px;
 padding:40px;
 color:#777;
 font-size:14px;
@@ -93,7 +105,9 @@ color:#555;
 
 <body>
 
-<header>
+<div class="container">
+
+<img src="signalandsprout-logo.png" class="logo">
 
 <h1>Signal & Sprout</h1>
 
@@ -101,9 +115,7 @@ color:#555;
 Simple tools for growing families
 </p>
 
-</header>
-
-<section class="apps">
+<div class="apps">
 
 <a href="/moneysprout" class="card">
 
@@ -123,7 +135,7 @@ Simple tools for growing families
 
 </div>
 
-</section>
+</div>
 
 <div class="appstore">
 
@@ -151,6 +163,7 @@ Download MoneySprout on the App Store
 
 </footer>
 
-</body>
+</div>
 
+</body>
 </html>
